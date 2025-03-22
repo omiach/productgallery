@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@use './app/scss/variables.scss' as variables;
+
+:root {
+    --minWidth: #{variables.$minWidth};
+    --tabletWidth: #{variables.$tabletWidth};
+    --desctop1200Width: #{variables.$desctop1200Width};
+    --desctop1440Width: #{variables.$desctop1440Width};
+    --desctop1920Width: #{variables.$desctop1920Width};
+}
+
+body {
+    margin: 0;
+}
