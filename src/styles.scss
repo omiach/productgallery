@@ -10,5 +10,25 @@
 }
 
 body {
+    --text-color: #030303;
+    --bkg-color: #fafafa;
+    --card-bkg-color: #ffffff;
+    --border-color: #cccccc;
+}
+
+body.dark-theme {
+    --text-color: #eeeeee;
+    --bkg-color: #252423;
+    --card-bkg-color: #323130;
+    --border-color: #000000;
+}
+
+html {
+    height: 100%;
+}
+
+body {
     margin: 0;
+    height: 100%;
+    color: var(--text-color);
 }

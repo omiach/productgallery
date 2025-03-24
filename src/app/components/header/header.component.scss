@@ -1,0 +1,21 @@
+.header {
+    height: 64px;
+    border: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    display: flex;
+}
+
+.logo, 
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-img {
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+}
