@@ -1,18 +1,25 @@
 @use '../../scss/variables.scss' as v;
-@use '../../../styles.scss' as g;
 
 :host {
     display: block;
     margin: auto;
     height: 100%;
     min-width: var(--minWidth);
-    max-width: var(--tabletWidth);
-    background-color: var(--bkg-color);
+    max-width: var(--tabletWidth);    
+}
+
+.body {
+    display: flex;
+    height: 100%;
+    background-color: var(--bkg-color-secondary);
 }
 
 @media (width >= v.$tabletWidth) {   
    :host {
         max-width: var(--desctop1200Width);
+   }
+   .body {
+     background-color: var(--bkg-color-primary);
    }   
 }
 
@@ -36,5 +43,5 @@
 
  button {
      background-color: var(--card-bkg-color);
-     color: var(--text-color);
+     color: var(--text-color-primary);
  }
